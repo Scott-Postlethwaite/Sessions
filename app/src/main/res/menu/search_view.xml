@@ -4,10 +4,10 @@
 
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/search1"
         android:icon="@drawable/icon_search"
         android:title="Search"
-        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always" />
 
 

@@ -19,7 +19,7 @@
         android:theme="@style/customTheme">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCsgwInbgYkyQkin7a0C5akHCOYA28QMp4"/>
+            android:value="YOUR_API_KEY_HERE"/>
 
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -58,6 +58,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
     </application>
 

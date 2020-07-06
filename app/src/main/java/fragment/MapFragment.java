@@ -140,7 +140,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();
         LatLng latLng= new LatLng(latitude,longitude);
-         gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,6));
+        gmap.setMyLocationEnabled(true);
+        gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,10));
 
 
         getSpots();
