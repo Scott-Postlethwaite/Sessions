@@ -8,8 +8,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient extends Activity {
-    public static final String BASE_URL = "URL1";
-    public static final String BASE_URL_1 = "URL2";
+    public static final String BASE_URL = "URL";
+    public static final String BASE_URL_1 = "URL";
     private static Retrofit retrofit = null;
     public static Retrofit getApiClient(){
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY);

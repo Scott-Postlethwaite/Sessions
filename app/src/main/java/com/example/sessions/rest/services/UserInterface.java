@@ -48,4 +48,7 @@ public interface UserInterface {
     @GET("search")
     Call<List<SpotModel>> search(@QueryMap Map<String, String> params);
 
+    @GET("myspots")
+    Call<List<SpotModel>> mySpots(@QueryMap Map<String, String> params);
+
 }
