@@ -2,6 +2,7 @@ package com.example.sessions.rest.services;
 
 import com.example.sessions.LoginActivity;
 import com.example.sessions.model.ImageModel;
+import com.example.sessions.model.ReportModel;
 import com.example.sessions.model.ReviewModel;
 import com.example.sessions.model.SpotModel;
 import com.example.sessions.model.User;
@@ -33,6 +34,9 @@ public interface UserInterface {
     @POST("postreview")
     Call<Integer> uploadReview(@Body MultipartBody requestBody);
 
+    @POST("postreport")
+    Call<Integer> uploadReport(@Body MultipartBody requestBody);
+
     @GET("allspots")
     Call<List<SpotModel>> getAllSpots();
 
@@ -50,5 +54,8 @@ public interface UserInterface {
 
     @GET("myspots")
     Call<List<SpotModel>> mySpots(@QueryMap Map<String, String> params);
+
+    @GET("myreports")
+    Call<List<ReportModel>> myReports(@QueryMap Map<String, String> params);
 
 }

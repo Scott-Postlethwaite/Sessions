@@ -122,6 +122,17 @@ public class SpotActivity extends AppCompatActivity {
             }
         });
 
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent = new Intent(SpotActivity.this, ReportActivity.class);
+                intent.putExtra("SPOT_ID", String.valueOf(spotId));
+                startActivity(intent);
+            }
+        });
+
     }
 
 

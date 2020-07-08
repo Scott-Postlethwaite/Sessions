@@ -61,7 +61,7 @@ public class SearchActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.search_view,menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.search1).getActionView();
         searchView.setIconified(false);
-        searchView.setQueryHint("Search People ");
+        searchView.setQueryHint("Search Spots ");
         searchView.setMaxWidth(Integer.MAX_VALUE);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
